@@ -1,10 +1,7 @@
-import { Footer } from "@/components/Footer";
-import Header from "@/components/Header";
 import { Link } from "react-router-dom";
 
 export const Home = () => {
   return (
-    <Header />,
     <section>
         <div className="profile-content">
         <h3>Hello, my name is</h3>
@@ -20,9 +17,7 @@ export const Home = () => {
       <div className="profile-img">
         <img src="" alt="Rudi Júnior picture" />
       </div>
-    </section>,
-
-    <Footer />
+    </section>
   );
 };
 
