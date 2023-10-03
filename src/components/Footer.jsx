@@ -1,9 +1,10 @@
-
-export const Footer = () => {
+const Footer = () => {
   return (
         <footer className="footer">
-            <h4>&copy; 2023 Rudi Júnior </h4>
+            <h4>&copy; 2023 - Rudi Júnior </h4>
             <p>rudi.juniior@gmail.com</p> 
         </footer>
   );
 };
+
+export default Footer;
