@@ -1,6 +1,10 @@
+import { Footer } from "@/components/Footer";
+import Header from "@/components/Header";
 
 export const Contact = () => {
   return (
+    <Header />,
+    
     <section>
       <h1 className="title">Contact <span>Me</span></h1>
       <div className="media-links">
@@ -16,7 +20,9 @@ export const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
+    </section>,
+
+    <Footer />
   );
 };
 
