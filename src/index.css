@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
 
 @layer base {
     :root {
@@ -17,4 +23,24 @@
         --secondary: #d6c1f1;
         --accent: #6c2abb;
       }
+      html, body {
+        @apply h-full p-0 m-0 bg-[color:var(--background)] text-[color:var(--text)];
+      }
+}
+
+@layer components {
+    .navbar {
+        @apply flex justify-end mr-20;
+    }
+    .nav-list, .nav-items, a {
+        @apply flex flex-row mx-3 py-3;
+    }
+ 
+
+    .footer {
+        @apply flex flex-col justify-center items-center font-medium mb-5 text-xl text-center absolute bottom-0 w-full;
+    }
+    .footer p {
+        @apply font-normal text-sm;
+    }
 }
