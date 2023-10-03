@@ -1,7 +1,20 @@
+import Header from "@/components/Header";
+import { Link } from "react-router-dom";
 
 export const About = () => {
   return (
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos saepe doloremque excepturi magni voluptate adipisci sint rem ea expedita. Dolor laudantium corrupti libero officia, iusto beatae totam eos fuga sunt molestias ad velit. Dolorum est eos accusamus repellat explicabo ullam quis quas quae, recusandae laboriosam, blanditiis tempora commodi maxime vero?</p>
+    <Header />,
+
+    <main>
+      <h2 className="title">About <span>Me</span></h2>
+          <h1>{`I'm Rudi`}</h1>
+          <p className="abt-txt">
+            {`I'm 22 years old.`} A web developer focused on front-end, at the beginning of my career and looking to evolve more.
+            Graduated in I.T Management.
+            Currently living in São Paulo, SP - Brazil.
+            <Link href="https://heartdevs.com" target="_blank"><span className="h">He4rt Developers Member.</span></Link>
+          </p>
+    </main>
   );
 };
 
