@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export const Home = () => {
   return (
@@ -9,8 +9,8 @@ export const Home = () => {
         <h3>{`And i'm a`}<span className="multiple-text"></span></h3>
 
         <div className="social-media">
-          <Link href="https://linkedin.com/in/rudi-junior" target="_blank"><i className="bx bxl-linkedin" title="My LinkedIn"></i></Link>
-          <Link href="https://github.com/RudiJr" target="_blank"><i className="bx bxl-github" title="My Github"></i></Link>
+          {/* <Link href="https://linkedin.com/in/rudi-junior" target="_blank"><i className="bx bxl-linkedin" title="My LinkedIn"></i></Link>
+          <Link href="https://github.com/RudiJr" target="_blank"><i className="bx bxl-github" title="My Github"></i></Link> */}
         </div>
       </div>
 
@@ -21,4 +21,5 @@ export const Home = () => {
   );
 };
 
+// TODO: Fix Links 
 

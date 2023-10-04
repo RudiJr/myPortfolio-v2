@@ -5,12 +5,12 @@ export const Contact = () => {
       <div className="media-links">
         <div className="social-box">
           <div className="social-card">
-            <a href="https://www.linkedin.com/in/rudi-junior/"><i className="bx bxl-linkedin"></i></a>
+            {/* <a href="https://www.linkedin.com/in/rudi-junior/"><i className="bx bxl-linkedin"></i></a> */}
             <h5>LinkedIn</h5>
           </div>
 
           <div className="social-card">
-            <a href="https://github.com/RudiJr"><i className="bx bxl-github"></i></a>
+            {/* <a href="https://github.com/RudiJr"><i className="bx bxl-github"></i></a> */}
             <h5>Github</h5>
           </div>
         </div>
@@ -18,4 +18,6 @@ export const Contact = () => {
     </section>
   );
 };
+
+// TODO: Fix Links 
 

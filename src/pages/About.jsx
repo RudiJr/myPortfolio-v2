@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export const About = () => {
   return (
@@ -9,7 +9,7 @@ export const About = () => {
             {`I'm 22 years old.`} A web developer focused on front-end, at the beginning of my career and looking to evolve more.
             Graduated in I.T Management.
             Currently living in São Paulo, SP - Brazil.
-            <Link href="https://heartdevs.com" target="_blank"><span className="h">He4rt Developers Member.</span></Link>
+            {/* <Link href="https://heartdevs.com" target="_blank"><span className="h">He4rt Developers Member.</span></Link> */}
           </p>
     </main>
   );
