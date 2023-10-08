@@ -2,7 +2,7 @@
 
 export const Home = () => {
   return (
-    <section>
+    <section className="profile">
         <div className="profile-content">
         <h3>Hello, my name is</h3>
         <h1>Rudi Júnior</h1>
@@ -15,7 +15,7 @@ export const Home = () => {
       </div>
 
       <div className="profile-img">
-        <img src="" alt="Rudi Júnior picture" />
+        <img src="src/assets/img/Rudi.png" alt="Rudi Júnior picture" />
       </div>
     </section>
   );
