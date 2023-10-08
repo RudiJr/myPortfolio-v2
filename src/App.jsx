@@ -2,7 +2,7 @@ import './index.css';
 import {Route,Routes} from "react-router-dom"
 import {Home, About, Projects, Contact} from '@/pages'
 import Footer from '@/components/Footer';
-import Header from './components/Header';
+import Header from '@/components/Header';
 
 function App() {
   return (
