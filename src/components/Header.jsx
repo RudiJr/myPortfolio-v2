@@ -1,6 +1,5 @@
 import {Link, NavLink} from "react-router-dom";
-import { useRef } from 'react';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 
 function Nav() {
   const iconRef = useRef();
