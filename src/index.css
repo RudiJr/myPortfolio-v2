@@ -35,8 +35,8 @@
       
     }
     .nav-list { 
-        @apply flex flex-col items-center;
-        @apply sm:flex-row sm:gap-8 lg:mr-16;
+        @apply flex flex-col items-center mb-16;
+        @apply sm:flex-row sm:gap-8 lg:mr-16 sm:mb-0;
     }
     .nav-items {
         @apply flex justify-between py-12 cursor-pointer;
