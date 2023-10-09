@@ -30,16 +30,15 @@
 
 @layer components {
     .navbar { 
-        @apply hidden absolute w-full h-5/6 justify-center items-center text-5xl bg-[color:var(--background)];
+        @apply hidden absolute w-full h-5/6 justify-center items-center text-4xl bg-[color:var(--background)];
         @apply sm:flex sm:static sm:h-auto sm:text-lg lg:justify-end;
-      
     }
     .nav-list { 
         @apply flex flex-col items-center mb-16;
         @apply sm:flex-row sm:gap-8 lg:mr-16 sm:mb-0;
     }
     .nav-items {
-        @apply flex justify-between py-12 cursor-pointer;
+        @apply flex justify-between py-8 cursor-pointer;
         @apply sm:py-8;
     }
     .footer {
@@ -51,8 +50,9 @@
     }
 
     .profile {
-        @apply flex flex-col items-center justify-center py-20;
-        @apply lg:flex-row lg:justify-between lg:py-40 lg:px-20;
+        height: 90vh;
+        @apply flex flex-col items-center justify-center pb-16;
+        @apply lg:flex-row lg:justify-between  lg:px-20;
     }
     .profile-content {
         @apply text-4xl font-bold my-6;
