@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -15,6 +15,7 @@
         --primary: #8d50d7;
         --secondary: #230e3e;
         --accent: #8544d5;
+        --card: rgba(255, 255, 255, 0.03);
     }
     .light {
         --text: #18092a;
@@ -29,6 +30,7 @@
 }
 
 @layer components {
+    /* Header / Navbar */
     .navbar { 
         @apply hidden absolute w-full h-5/6 justify-center items-center text-4xl bg-[color:var(--background)];
         @apply sm:flex sm:static sm:h-auto sm:text-lg lg:justify-end;
@@ -41,14 +43,8 @@
         @apply flex justify-between py-8 cursor-pointer;
         @apply sm:py-8;
     }
-    .footer {
-        @apply flex flex-col justify-center items-center font-medium mb-5 text-sm absolute bottom-0 w-full;
-        @apply lg:text-base;
-    }
-    .footer p {
-        @apply font-normal text-xs;
-    }
 
+    /* Profile section */
     .profile {
         height: 90vh;
         @apply flex flex-col items-center justify-center pb-16;
@@ -66,12 +62,48 @@
       @apply w-full h-80 object-contain;
       @apply md:h-96;
     }
+
+    /* About me / skills */
+    .about {
+        @apply font-bold w-full; 
+    }
+    .about h2 {
+        @apply text-center text-2xl pb-4;
+    }
+    .about h1, p {
+        @apply text-left text-sm px-4;  
+    }
+    .about p {
+        @apply font-normal pt-1 pb-8;
+    }
+    .skills h2, .others h2 {
+        @apply w-full text-center text-xl font-semibold;
+    }
+    .skills-box {
+        @apply flex flex-wrap justify-center items-center gap-3 ;
+    }
+    .skill {
+        @apply flex flex-col justify-center items-center h-24 w-24 rounded-2xl bg-[color:var(--card)] text-center text-sm font-medium;
+        @apply lg:h-28 lg:w-36;
+    }
+    .others {
+        @apply mt-4 flex-wrap flex flex-row justify-center items-center gap-3;
+    }
+
+    /* Footer */
+    .footer {
+        @apply flex flex-col justify-center items-center font-medium mb-5 text-sm absolute bottom-0 w-full;
+        @apply lg:text-base;
+    }
+    .footer p {
+        @apply font-normal text-xs;
+    }
 }
 
 
 @layer utilities {
-    box-icon {
-        @apply [color:var(--primary)] cursor-pointer flex justify-end pr-4 pt-4 sm:hidden;
+    box-icon[name='menu'], box-icon[name='x']  {
+        @apply cursor-pointer flex justify-end pr-4 pt-4 sm:hidden;
     }
     @media (max-height: 750px) {
         .profile {
@@ -79,6 +111,11 @@
         }
         .footer {
             @apply mb-2;
+        }
+    }
+    @media (max-height: 680px) {
+        .footer {
+            @apply hidden;
         }
     }
 }
