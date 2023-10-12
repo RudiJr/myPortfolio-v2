@@ -69,25 +69,35 @@
     }
     .about h2 {
         @apply text-center text-2xl pb-4;
+        @apply sm:text-3xl sm:pt-8 lg:text-5xl lg:pt-16;
     }
-    .about h1, p {
-        @apply text-left text-sm px-4;  
+    .about h1, .abt-txt {
+        @apply text-left text-sm px-8;
+        @apply sm:text-base sm:px-16 lg:text-lg lg:px-28;
     }
     .about p {
         @apply font-normal pt-1 pb-8;
+        @apply sm:pb-16;
     }
     .skills h2, .others h2 {
         @apply w-full text-center text-xl font-semibold;
+        @apply sm:text-2xl lg:text-3xl;
     }
     .skills-box {
-        @apply flex flex-wrap justify-center items-center gap-3 ;
+        @apply flex flex-wrap justify-center items-center gap-5;
+        @apply sm:gap-7;
     }
     .skill {
         @apply flex flex-col justify-center items-center h-24 w-24 rounded-2xl bg-[color:var(--card)] text-center text-sm font-medium;
-        @apply lg:h-28 lg:w-36;
+        @apply sm:h-28 sm:w-28 lg:w-36 lg:h-32 lg:text-lg;
+    }
+    .skill-name {
+        @apply pt-1;
+        @apply sm:pt-3 lg:pt-4;
     }
     .others {
-        @apply mt-4 flex-wrap flex flex-row justify-center items-center gap-3;
+        @apply mt-4 flex-wrap flex flex-row justify-center items-center gap-5;
+        @apply sm:gap-7 sm:mt-8;
     }
 
     /* Footer */
