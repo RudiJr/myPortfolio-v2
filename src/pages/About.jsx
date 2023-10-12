@@ -6,7 +6,7 @@ export const About = () => {
       <div className="about">
         <h2>About <span>Me</span></h2>
         <h1>{`I'm Rudi`}</h1>
-        <p>
+        <p className="abt-txt">
             22 years old. A web developer focused on front-end, at the beginning of my career and looking to evolve more.
             Graduated in I.T Management.
             Currently living in São Paulo, SP - Brazil.
