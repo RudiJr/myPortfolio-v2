@@ -65,7 +65,7 @@
 
     /* About me / skills */
     .about {
-        @apply font-bold w-full; 
+        @apply font-bold w-full;
     }
     .about h2 {
         @apply text-center text-2xl pb-4;
@@ -73,9 +73,9 @@
     }
     .about h1, .abt-txt {
         @apply text-left text-sm px-8;
-        @apply sm:text-base sm:px-16 lg:text-lg lg:px-28;
+        @apply sm:text-base sm:px-16 lg:text-lg lg:px-32;
     }
-    .about p {
+    .abt-txt {
         @apply font-normal pt-1 pb-8;
         @apply sm:pb-16;
     }
