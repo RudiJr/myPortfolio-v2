@@ -65,15 +65,15 @@
 
     /* About me / skills */
     .about {
-        @apply font-bold w-full;
+        @apply font-bold w-full flex flex-col items-center;
     }
     .about h2 {
-        @apply text-center text-2xl pb-4;
-        @apply sm:text-3xl sm:pt-8 lg:text-5xl lg:pt-16;
+        @apply text-center text-2xl pb-4 pt-4;
+        @apply sm:text-3xl sm:pt-8 lg:text-5xl lg:pt-16 lg:pb-8;
     }
     .about h1, .abt-txt {
-        @apply text-left text-sm px-8;
-        @apply sm:text-base sm:px-16 lg:text-lg lg:px-32;
+        @apply text-left text-sm px-8 w-4/5;
+        @apply sm:text-base sm:px-16 lg:text-lg sm:w-3/4 lg:w-1/2;
     }
     .abt-txt {
         @apply font-normal pt-1 pb-8;
