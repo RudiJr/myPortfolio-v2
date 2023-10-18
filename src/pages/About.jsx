@@ -1,5 +1,3 @@
-// import { Link } from "react-router-dom";
-
 export const About = () => {
   return (
     <main>
@@ -10,10 +8,9 @@ export const About = () => {
            <p>22 years old. A web developer focused on front-end, at the beginning of my career and looking to evolve more.</p>
             <p>Graduated in I.T Management.</p>
             <p>Currently living in São Paulo, SP - Brazil.</p>
-            {/* <Link href="https://heartdevs.com" target="_blank"><span className="h">He4rt Developers Member.</span></Link> */}
+            <a href="https://heartdevs.com" rel="noreferrer" target="_blank"><span className="he4rt">He4rt Developers Member.</span></a>
         </div>
       </div>
-
           <section className="skills">
               <div className="skills-box">
               <h2>Skills</h2>
@@ -60,9 +57,5 @@ export const About = () => {
                   </div>
           </section>
     </main>
-  
   );
 };
-
-
-// TODO: Fix Links 

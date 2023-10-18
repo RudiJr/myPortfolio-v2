@@ -99,6 +99,10 @@
         @apply mt-4 flex-wrap flex flex-row justify-center items-center gap-5;
         @apply sm:gap-7 sm:mt-8;
     }
+    .he4rt {
+        @apply flex items-center justify-center text-[color:var(--primary)] pt-4 pb-4 text-base font-semibold;
+        @apply sm:text-lg lg:text-xl
+    }
 
     /* Footer */
     .footer {
