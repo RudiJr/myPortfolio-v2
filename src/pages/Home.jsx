@@ -23,5 +23,3 @@ export const Home = () => {
   );
 };
 
-// TODO: Fix Links 
-
