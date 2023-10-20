@@ -114,10 +114,24 @@
     /* Contact section */
     .contact {
         @apply flex justify-center items-center flex-col;
+        height: 80vh;
     }
     .contact a {
-        @apply flex justify-center items-center w-40 h-40 bg-transparent rounded-full text-2xl mx-12 mb-8;
+        @apply flex justify-center items-center w-20 h-20 bg-transparent rounded-full mx-12 mb-8;
+        @apply md:w-24 md:h-24 lg:w-32 lg:h-32;
         border: .2rem solid var(--primary);
+    }
+    .social-box {
+        @apply flex text-center;
+    }
+
+    .social-card h5 {
+        @apply text-2xl text-center;
+        @apply md:text-3xl
+    }
+    .contact h2 {
+        @apply text-5xl font-bold text-center mb-20;
+        @apply lg:text-7xl;
     }
 
     /* Footer */
